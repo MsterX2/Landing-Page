@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
@@ -46,15 +48,25 @@ a {
 }
 
 /* hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    justify-self: flex-start;
+}
 
 #hero {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     height: 400px;
-    margin: 64px;
-    margin-bottom: 32px;
     align-items: center;
+    align-self: center;
+    flex: 1;
+    margin-block: 48px;
 }
 
 .container {
@@ -85,17 +97,22 @@ img {
 }
 
 /* body */
+.body {
+    flex: 1;
+}
 
 /* information section */
 .informationSection {
+    height: 400px;
     text-align: center;
+
 }
 
 .informationText {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
-    margin-bottom: 32px;
+    margin-block: 32px;
 }
 
 .images {
@@ -196,6 +213,7 @@ img {
 .hero,
 .footer {
     background-color: #1F2937;
+    flex: 0 1 auto;
 }
 
 .footer {
